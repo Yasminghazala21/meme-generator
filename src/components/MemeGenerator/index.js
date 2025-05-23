@@ -79,12 +79,8 @@ class MemeGenerator extends Component {
 
   createMemeContent = event => {
     event.preventDefault()
-    const {
-      imageUrlValue,
-      topTextValue,
-      bottomTextValue,
-      activeFontSizeValue,
-    } = this.state
+    const {imageUrlValue, topTextValue, bottomTextValue, activeFontSizeValue} =
+      this.state
 
     this.setState({
       isMemeGenerated: true,
@@ -94,10 +90,6 @@ class MemeGenerator extends Component {
         bottomText: bottomTextValue,
         fontSize: activeFontSizeValue,
       },
-      imageUrlValue: '',
-      topTextValue: '',
-      bottomTextValue: '',
-      activeFontSizeValue: fontSizesOptionsList[0].optionId,
     })
   }
 
